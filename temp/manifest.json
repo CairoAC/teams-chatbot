@@ -1,0 +1,81 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.13",
+  "id": "026d2890-1d42-11ef-bbd0-f13ef0ae78ba",
+  "version": "0.0.1",
+  "packageName": "BrainzTeamsAssistant",
+  "developer": {
+    "name": "Brainz Group",
+    "websiteUrl": "https://appservice-brainz-teams-assistant.azurewebsites.net",
+    "privacyUrl": "https://appservice-brainz-teams-assistant.azurewebsites.net/privacy.html",
+    "termsOfUseUrl": "https://appservice-brainz-teams-assistant.azurewebsites.net/tou.html"
+  },
+  "name": {
+    "short": "Brainz's Teams Assistant",
+    "full": "Brainz's Teams Assistant"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "105b9860-1d42-11ef-bbd0-f13ef0ae78ba",
+      "name": "Brainz",
+      "contentUrl": "https://appservice-brainz-teams-assistant.azurewebsites.net/brainzsBot/brainz.html",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "1df774a5-256e-47c8-86e5-d4d60b1a7631",
+      "needsChannelSelector": true,
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupchat"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "Help",
+              "description": "Shows help information"
+            },
+            {
+              "title": "Who am I?",
+              "description": "Shows information about your Teams user"
+            },
+            {
+              "title": "Mention me",
+              "description": "Let the bot @mention you"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "appservice-brainz-teams-assistant.azurewebsites.net"
+  ],
+  "showLoadingIndicator": false
+}

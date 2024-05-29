@@ -1,0 +1,9 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "Brainz Group"
+    },
+    "libraryName": "brainzTeamsBot",
+    "generator-version": "4.1.0"
+  }
+}
